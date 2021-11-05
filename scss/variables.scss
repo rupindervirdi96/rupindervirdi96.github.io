@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Patrick+Hand&family=Titan+One&display=swap");
+
+$body-bg-color: #5d737e;
+$container-bg-color: #000;
+$sub-container-bg-color: #364958;
+$frame-border-color: #87bba2;
+$box-shadow-color: rgba(225, 225, 225, 0.1);
+$smallerFontStyle: "Architects Daughter", cursive;
+$biggerFontStyle: "Titan One", cursive;
+
+$verySmallFont: 14px;
+$smallFont: 16px;
+$mediumFont: 24px;
+$largeFont: 30px;
+$extraLargefont: 80px;
+$veryLargefont: 120px;
+
+//Media Query
+$smallScreen: "450px";
+$mediumScreen: "850px";
+$largeScreen: "1250px";
