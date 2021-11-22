@@ -10,218 +10,237 @@ $$ = (e) => {
 
 const userInfo = {
   name: "RUPINDER PAL SINGH",
-  profession: "FULL STACK WEB DEVELOPER",
+  // profession: "FULL STACK WEB DEVELOPER",
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about:
-    "Full Stack Web Developer with 3+ years of experience in building scalable web applications using modern development stack. I have experience in teaching programming to college students. Worked for various clients over the years on freelance projects to help them to achieve their business goals.",
+    " I am Full Stack Web Developer with 3+ years of experience in building scalable web applications using modern development stack. I have experience in teaching programming to college students. Worked for various clients over the years on freelance projects to help them to achieve their business goals.",
 };
 
-const education = {
-  Course: [
-    "BACHELORS IN COMPUTER SCIENCE",
-    "ADVANCED DIPLOMA IT PROGRAMMER ANALYST",
-  ],
-  Institute: ["Guru Nanak Dev University", "LaSalle College"],
-  Location: ["Amritsar,India", "Montreal, Quebec"],
-  Duration: ["2017", "2021"],
-};
-
-const experience = {
-  status: ["Front End Developer"],
-  Company: ["Enrage Tech"],
-  Location: ["Jalandhar,India"],
-  Duration: ["-- 2014 - 2017 --"],
-  Description: [
-    "Provided front end REACT based websites already integrated with a powerful backend with various features to different clients.",
-  ],
-};
-
-const skills = {
-  CODING: [
-    { name: "REACT", percentage: "85" },
-    { name: "VUE", percentage: "75" },
-    { name: "ANDROID", percentage: "65" },
-    { name: "JAVA", percentage: "80" },
-    { name: "C++", percentage: "75" },
-    { name: "PYTHON", percentage: "60" },
-  ],
-  DESIGN: [
-    { name: "HTML", percentage: "95" },
-    { name: "CSS", percentage: "90" },
-    { name: "SASS", percentage: "85" },
-    { name: "BOOTSTRAP", percentage: "65" },
-    { name: "FIGMA", percentage: "80" },
-    { name: "ADOBE PHOTOSHOP", percentage: "75" },
-    { name: "ADOBE XD", percentage: "75" },
-  ],
-  BACKEND: [
-    { name: "NODE", percentage: "85" },
-    { name: "EXPRESS", percentage: "75" },
-    { name: "SQL", percentage: "82" },
-    { name: "FIREBASE", percentage: "70" },
-    { name: "MONGO-DB", percentage: "80" },
-  ],
-  OTHERTECHS: [
-    { name: "GITHUB", percentage: "85" },
-    { name: "GIT", percentage: "82" },
-    { name: "HEROKU", percentage: "80" },
-    { name: "MS EXCEL", percentage: "85" },
-    { name: "MS POWERPOINT", percentage: "92" },
-    { name: "MS WORD", percentage: "95" },
-  ],
-};
-
-const projects = [
+const testimonials = [
   {
-    name: "FACEBOOK-CLONE",
-    img: "./assets/facebook-clone.png",
-    desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
-    link: "https://facebook-clone-v.herokuapp.com/",
+    author: "Roneet Kumar",
+    profession: "Front End Engineer at Paypal",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQFYjZeNfKnb-A/profile-displayphoto-shrink_800_800/0/1561257790608?e=1643241600&v=beta&t=vKMVCnRgDpm8f2laA8up_md-VgAVbxXgXmYjNF8i0AM",
+    message: `Rupinder is a dear friend with whom i had pleasure to
+    work on various exciting projects while we were completing our post graduate diploma at
+    LaSalle College.
+    He is super fun to work with and a great team player, moreover he is a skilled
+    programmer and has an eye for attention to detail.
+    I can happily recommend Rupinder for Full-stack Software development roles.`,
   },
   {
-    name: "ISSUES TRACKER",
-    img: "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
-    desc: "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
-    link: "https://issuestrackerr.herokuapp.com/",
-  },
-  {
-    name: "MUSEUM",
-    img: "./assets/museum.png",
-    desc: "Museum is a music player made with android studio as a course project. Used Figma for design and java for coding. This app is being developed as a part of my course Android Development.",
-    link: "https://github.com/rupindervirdi96/museum",
-  },
-  {
-    name: "REACTOR",
-    img: "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
-    desc: "Reactor is an ultimate idea to sell or promote React components as products online by unlimited number of users throughout the world. Server side has been finished already. Design is currently under development.",
-    link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
-  },
-  {
-    name: "HANGMAN",
-    img: "https://s3.amazonaws.com/iconbros/icons/icon_pngs/000/001/955/original/hangman.png?1560586372",
-    desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
-    link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
-  },
-  {
-    name: "LOOPER",
-    img: "https://www.freeiconspng.com/thumbs/no-image-icon/no-image-icon-32.png",
-    desc: "Looper is a social media application that I made during last winter break using MERN stack",
-    link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
-  },
-  {
-    name: "TRIVIA",
-    img: "https://lh3.googleusercontent.com/proxy/VwS8VWhc6oAkcpHrbOSR288q7JctsxTOCXKtvZUHj7tQk2DUy4AjIWVCp_k_vI3fDe5NGJhETm6XrSGamSNEV3JQ",
-    desc: "TRIVIA was developed by me as my final project for the course of Advanced Object Oriented Programming. This project helped me to learn the concept of classes and objects very well.",
-    link: "https://rupindervirdi96.github.io/TRIVIA-GAME/FinalProject",
-  },
-  {
-    name: "CALCULATOR REACT",
-    img: "./assets/calc.png",
-    desc: "Calculator react is a very basic calculator. One of my first apps i made with ",
-    link: "https://rupindervirdi96.github.io/CalculatorReact/",
+    author: "Gagandeep Singh",
+    profession: "Managing Director at Enrage Tech",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQHqIFpnblkC5w/profile-displayphoto-shrink_800_800/0/1577990243508?e=1643241600&v=beta&t=mUYZ0VyfdzKZzEpMwTcsGr_LlsXN0wBo26ohAe3KIlo",
+    message: `He was a great asset for our company. The clients always appreciated his design and the functionality of the websites designed by him. He is a hard working person who is commited to deadlines and also is good human being.`,
   },
 ];
 
-//Initialize Projects
-// $(".prjName").innerText = projects[0].name;
-// $(".prjPic").style = "background-image: url(" + projects[0].img + ")";
-// $(".prjDesc span").innerText = projects[0].desc;
+const education = [
+  {
+    course: "PG Diploma in Web Programming",
+    institute: "College Lasalle",
+    location: "Quebec, Canada",
+    year: "2021",
+  },
+  {
+    course: "Bachelors in Computer Science",
+    institute: "Guru Nanak Dev University",
+    location: "Amritsar, India",
+    year: "2017",
+  },
+];
+
+const experience = [
+  {
+    position: "Assistant Professor",
+    company: "ISI College",
+    duration: "Nov 2020 - Jan 2021",
+    details:
+      "Assisted Professor Roneet Kumar at ISI College for teaching Javascript to students. I was assigned to prepare presentations to explain various aspects of the languages theoretically and practically. At many moments I was able to gain a lot of knowledge from the students as well.",
+  },
+  {
+    position: "Front End Web Developer",
+    company: "Enrage Tech",
+    duration: "2015 - 2018",
+    details: `I was responsible for implementing visual elements that were visible from the computer users vantage point within various web applications. I combined the art of design with the science of programming.<br/>
+    Rest of my tasks included:<br/>
+     • Develop new user-facing features<br/>
+     • Build reusable code and libraries for future use<br/>
+     • Ensure the technical feasibility of UI/UX designs<br/>
+     • Optimize application for maximum speed and scalability<br/>
+     • Assure that all user input is validated before submitting to back-end<br/>
+     • Collaborate with other team members and stakeholders`,
+  },
+];
+
+const skills = [
+  {
+    cat_name: "WEB_TECHS",
+    skills: [
+      { name: "REACT", percentage: "90" },
+      { name: "VUE", percentage: "85" },
+      { name: "HTML", percentage: "95" },
+      { name: "CSS", percentage: "75" },
+      { name: "SCSS", percentage: "75" },
+    ],
+  },
+  {
+    cat_name: "DATABASE",
+    skills: [
+      {
+        name: "MONGO-DB",
+        percentage: "75",
+      },
+      {
+        name: "POSTGRE-SQL",
+        percentage: "75",
+      },
+      {
+        name: "PLSQL",
+        percentage: "82",
+      },
+      {
+        name: "SQL",
+        percentage: "84",
+      },
+      {
+        name: "FIREBASE",
+        percentage: "80",
+      },
+    ],
+  },
+  {
+    cat_name: "BACKEND",
+    skills: [
+      { name: "NODE", percentage: "89" },
+      { name: "EXPRESS", percentage: "92" },
+      { name: "NESTjs", percentage: "82" },
+      { name: "NODEMAILER.js", percentage: "82" },
+    ],
+  },
+  {
+    cat_name: "DESIGN",
+    skills: [
+      { name: "FIGMA", percentage: "89" },
+      { name: "ADOBE XD", percentage: "81" },
+    ],
+  },
+  {
+    cat_name: "VERSION_CONTROL ",
+    skills: [
+      { name: "GITHUB", percentage: "90" },
+      { name: "GIT", percentage: "88" },
+    ],
+  },
+];
+
+const projects = [
+  {
+    name: "MINGLE",
+    img: "./assets/mingle.png",
+    desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
+    link: "https://mingle-app-virdi.herokuapp.com/",
+  },
+  {
+    name: "STREET SAVER",
+    img: "./assets/streetSaver.png",
+    desc: "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
+    link: "https://street-saver.herokuapp.com/",
+  },
+  {
+    name: "HANGMAN",
+    img: "/assets/hangman.png",
+    desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
+    link: "https://rupindervirdi96.github.io/hangman",
+  },
+  {
+    name: "LOOPER",
+    img: "./assets/looper.png",
+    desc: "",
+    link: "https://looper-app.herokuapp.com/login",
+  },
+];
 
 //Initialize User
 $(".name").innerText = userInfo.name;
-$(".about .info").innerText = userInfo.about;
+$(".info").innerText = userInfo.about;
 
 var y = 0;
 
 //Add Skills
 const createSkill = (skill) => {
-  const Skill =
-    `<div class="skill">
-  <div class="level">
-    <div class="name">` +
-    skill.name +
-    `</div>
-    <div class="percentage">
-      <div class="bar" style="width:` +
-    skill.percentage +
-    `%; position:relative">
-      <div class="buttonBar" title=${skill.percentage}%></div>
+  const newSkill = `
+  <div class="skill" data-aos="fade-right">
+    <div class="level">
+      <div class="name">${skill.name}</div>
+      <div class="percentage">
+        <div class="bar" style="width:${skill.percentage}%; position:relative"></div>
+        <div class="buttonBar" title=${skill.percentage}%></div>
       </div>
     </div>
-  </div>
-</div>`;
-  return Skill;
+  </div>`;
+  return newSkill;
 };
-// skills.forEach(x => {
-skills.DESIGN.forEach((skill) => {
-  $(".skills .design").innerHTML += createSkill(skill);
-});
-skills.CODING.forEach((skill) => {
-  $(".skills .coding").innerHTML += createSkill(skill);
-});
-skills.BACKEND.forEach((skill) => {
-  $(".skills .backend").innerHTML += createSkill(skill);
-});
-skills.OTHERTECHS.forEach((skill) => {
-  $(".skills .personal").innerHTML += createSkill(skill);
+const createCats = (cat, skills) => {
+  console.log(cat, skills);
+  const skillCat = `
+  <div class="skillCat">
+    <h3>${cat}</h3>
+  ${skills.map((skill) => createSkill(skill)).join("")}
+  </div>`;
+  return skillCat;
+};
+skills.map((skill) => {
+  $(".skills").innerHTML += createCats(skill.cat_name, skill.skills);
 });
 
 //Initialize Education
-$("#duration").innerText = education.Duration[1];
-$("#course").innerText = education.Course[1];
-$("#institute").innerText = education.Institute[1];
-$("#location").innerText = education.Location[1];
+education.map((edu) => {
+  $(".education-list").innerHTML += `
+  <div class="education">
+  <img src="./assets/education.png" height="80px" width="80px" alt="">
+  <h2 class="duration">${edu.year}</h2>
+  <h2 class="course">${edu.course}</h2>
+  <h2 class="institute">${edu.institute}</h2>
+  <h2 class="location">${edu.location}</h2>
+</div>`;
+});
 
-$(".rightArr").onclick = () => {
-  if ($("#duration").innerText == education.Duration[0]) {
-    $(".edu").classList.add("edu-animate");
-    setTimeout(() => {
-      $(".edu").classList.remove("edu-animate");
-      $("#duration").innerText = education.Duration[1];
-      $("#course").innerText = education.Course[1];
-      $("#institute").innerText = education.Institute[1];
-      $("#location").innerText = education.Location[1];
-    }, 500);
-  } else {
-    $(".edu").classList.add("edu-animate");
-    setTimeout(() => {
-      $(".edu").classList.remove("edu-animate");
-      $("#duration").innerText = education.Duration[0];
-      $("#course").innerText = education.Course[0];
-      $("#institute").innerText = education.Institute[0];
-      $("#location").innerText = education.Location[0];
-    }, 500);
-  }
-};
+//Initialize Work
+experience.map((work) => {
+  $(".work-list").innerHTML += `
+  <div class="work">
+  <div class="overlay" >
+              <div class="details">${work.details}</div>
+  </div>
+  <img src="./assets/work.png" height="80px" width="80px" alt="">
+  <h2 class="duration">${work.duration}</h2>
+  <h2 class="position">${work.position}</h2>
+  <h2 class="company">${work.company}</h2>
+</div>`;
+});
 
-$(".leftArr").onclick = () => {
-  if ($("#duration").innerText == education.Duration[0]) {
-    $(".edu").classList.add("edu-animate");
-    setTimeout(() => {
-      $(".edu").classList.remove("edu-animate");
-      $("#duration").innerText = education.Duration[1];
-      $("#course").innerText = education.Course[1];
-      $("#institute").innerText = education.Institute[1];
-      $("#location").innerText = education.Location[1];
-    }, 500);
-  } else {
-    $(".edu").classList.add("edu-animate");
-    setTimeout(() => {
-      $(".edu").classList.remove("edu-animate");
-      $("#duration").innerText = education.Duration[0];
-      $("#course").innerText = education.Course[0];
-      $("#institute").innerText = education.Institute[0];
-      $("#location").innerText = education.Location[0];
-    }, 500);
-  }
-};
+//Initialize Projects
+projects.map((project) => {
+  $(".projects").innerHTML += `
+          <div class="project" style="background-image: url(${project.img})">
+            <div class="overlay" >
+              <div class="prj-name">${project.name}</div>
+              <a target="_blank" href="${project.link}">View</a>
+            </div>
+          </div>
+  `;
+});
 
-$(".contact h4").innerHTML = `${userInfo.address} | ${userInfo.phone}`;
-
-// Profession animation.
-
-var professions = ["Front End Web Developer ", "Full Stack Web Developer"];
+//Profession animation
+var professions = [
+  "#FrontEndWebDeveloper",
+  "#FullStackWebDeveloper",
+  "#DesignEnthusiast",
+  "#Teacher",
+];
 
 var x = 0;
 var sentenceNumber = 0;
@@ -239,7 +258,7 @@ function write() {
     clearInterval(intervalWrite);
     setTimeout(() => {
       intervalRemove = setInterval(remove, 100);
-    }, 2000);
+    }, 400);
   }
 }
 
@@ -263,3 +282,22 @@ function remove() {
 }
 
 $(".copyright span").innerText = new Date().getFullYear();
+
+//Testimonials
+const createTestimony = (testimony) => {
+  const template = `<div class="testimony">
+<div class="message">"${testimony.message}"</div>
+<div class="details">
+  <img src="${testimony.img}"   alt="">
+  <div class="about">
+    <div class="author">${testimony.author}</div>
+    <div class="prof">${testimony.profession}</div>
+  </div>
+</div>
+</div>`;
+  return template;
+};
+
+testimonials.map((testimony) => {
+  $(".testimonials").innerHTML += createTestimony(testimony);
+});
