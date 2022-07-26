@@ -10,7 +10,6 @@ $$ = (e) => {
 
 const userInfo = {
   name: "RUPINDER PAL SINGH",
-  // profession: "FULL STACK WEB DEVELOPER",
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about:
@@ -21,7 +20,7 @@ const testimonials = [
   {
     author: "Roneet Kumar",
     profession: "Front End Engineer at Paypal",
-    img: "https://media-exp1.licdn.com/dms/image/C5103AQFYjZeNfKnb-A/profile-displayphoto-shrink_800_800/0/1561257790608?e=1643241600&v=beta&t=vKMVCnRgDpm8f2laA8up_md-VgAVbxXgXmYjNF8i0AM",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQFYjZeNfKnb-A/profile-displayphoto-shrink_800_800/0/1561257790608?e=1664409600&v=beta&t=JoEgEmJHKCToS5gB14wME7Yn3dzdTrxKyqs59unllJM",
     message: `Rupinder is a dear friend with whom i had pleasure to
     work on various exciting projects while we were completing our post graduate diploma at
     LaSalle College.
@@ -32,8 +31,14 @@ const testimonials = [
   {
     author: "Gagandeep Singh",
     profession: "Managing Director at Enrage Tech",
-    img: "https://media-exp1.licdn.com/dms/image/C5103AQHqIFpnblkC5w/profile-displayphoto-shrink_800_800/0/1577990243508?e=1643241600&v=beta&t=mUYZ0VyfdzKZzEpMwTcsGr_LlsXN0wBo26ohAe3KIlo",
+    img: "https://media-exp1.licdn.com/dms/image/C5103AQHqIFpnblkC5w/profile-displayphoto-shrink_800_800/0/1577990243508?e=1664409600&v=beta&t=1lr6P8ja2ngJLANSJz2GH_NqN-QZP339DkBaPsbvV0c",
     message: `He was a great asset for our company. The clients always appreciated his design and the functionality of the websites designed by him. He is a hard working person who is commited to deadlines and also is good human being.`,
+  },
+  {
+    author: "Lucio Santilli",
+    profession: "Lecturer at Collège LaSalle",
+    img: "https://media-exp1.licdn.com/dms/image/C4E03AQGBB1saYEqvig/profile-displayphoto-shrink_800_800/0/1516284513077?e=1664409600&v=beta&t=i6dly09ITYDJz3XQw7Pj_yCK7c25GriUcPl6KUS3l70",
+    message: `I was pleased to have Rupinder in one of my classes. During that class, he was always curious, responsible, respectful and was not shy to ask relevant questions. He excelled in the class. I strongly recommend him for any academic or professional setting.`,
   },
 ];
 
@@ -42,7 +47,7 @@ const education = [
     course: "PG Diploma in Web Programming",
     institute: "College Lasalle",
     location: "Quebec, Canada",
-    year: "2021",
+    year: "2020",
   },
   {
     course: "Bachelors in Computer Science",
@@ -53,6 +58,19 @@ const education = [
 ];
 
 const experience = [
+  {
+    position: "Front End Web Developer",
+    company: "LGS, an IBM company (BELL)",
+    duration: "Currently",
+    details: `I am working on a part of a web application to change from MVC code to a react application. I am working on development of various features new and existing. Working with multiple repositories on Bitbucket. Rest of my responsibilities include:<br/>
+     • Developing new user-facing features.<br/>
+     • Updating Jira trackers for agile environment and team management<br/>
+     • Writing efficient code for flexibility and agility of the product.<br/>
+     • Assuring that all user input is validated before submitting to back-end<br/>
+     • Solving high scale defects in existing applications.<br/>
+     • Working with a pretty complex source code handled on bitbucket using Github.<br/>,
+     • Collaborating with all team members and stakeholders<br/>`,
+  },
   {
     position: "Assistant Professor",
     company: "ISI College",
@@ -131,6 +149,7 @@ const skills = [
     cat_name: "VERSION_CONTROL ",
     skills: [
       { name: "GITHUB", percentage: "90" },
+      { name: "BITBUCKET", percentage: "90" },
       { name: "GIT", percentage: "88" },
     ],
   },
