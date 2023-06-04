@@ -160,13 +160,13 @@ const projects = [
     name: "MINGLE",
     img: "./assets/mingle.png",
     desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
-    link: "https://mingle-app-virdi.herokuapp.com/",
+    link: "https://mingle-app-virdi.onrender.com/",
   },
   {
     name: "STREET SAVER",
     img: "./assets/streetSaver.png",
     desc: "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
-    link: "https://street-saver.herokuapp.com/",
+    link: "https://street-saver.onrender.com/",
   },
   {
     name: "HANGMAN",
