@@ -13,14 +13,14 @@ const userInfo = {
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about:
-    " I am Full Stack Web Developer with 3+ years of experience in building scalable web applications using modern development stack. I have experience in teaching programming to college students. Worked for various clients over the years on freelance projects to help them to achieve their business goals.",
+    " I am a coder. I like writing code and make fully functioning websites. I have worked on many projects up until now professionally as well as personally. I have also done a bit of teaching in Computer Science subjects as well. ",
 };
 
 const testimonials = [
   {
     author: "Roneet Kumar",
-    profession: "Front End Engineer at Paypal",
-    img: "https://media-exp1.licdn.com/dms/image/C5103AQFYjZeNfKnb-A/profile-displayphoto-shrink_800_800/0/1561257790608?e=1664409600&v=beta&t=JoEgEmJHKCToS5gB14wME7Yn3dzdTrxKyqs59unllJM",
+    profession: "Front End Engineer at Morgan Stanley",
+    img: "./assets/1.jfif",
     message: `Rupinder is a dear friend with whom i had pleasure to
     work on various exciting projects while we were completing our post graduate diploma at
     LaSalle College.
@@ -31,13 +31,13 @@ const testimonials = [
   {
     author: "Gagandeep Singh",
     profession: "Managing Director at Enrage Tech",
-    img: "https://media-exp1.licdn.com/dms/image/C5103AQHqIFpnblkC5w/profile-displayphoto-shrink_800_800/0/1577990243508?e=1664409600&v=beta&t=1lr6P8ja2ngJLANSJz2GH_NqN-QZP339DkBaPsbvV0c",
+    img: "./assets/2.jfif",
     message: `He was a great asset for our company. The clients always appreciated his design and the functionality of the websites designed by him. He is a hard working person who is commited to deadlines and also is good human being.`,
   },
   {
     author: "Lucio Santilli",
     profession: "Lecturer at Collège LaSalle",
-    img: "https://media-exp1.licdn.com/dms/image/C4E03AQGBB1saYEqvig/profile-displayphoto-shrink_800_800/0/1516284513077?e=1664409600&v=beta&t=i6dly09ITYDJz3XQw7Pj_yCK7c25GriUcPl6KUS3l70",
+    img: "./assets/3.jfif",
     message: `I was pleased to have Rupinder in one of my classes. During that class, he was always curious, responsible, respectful and was not shy to ask relevant questions. He excelled in the class. I strongly recommend him for any academic or professional setting.`,
   },
 ];
@@ -160,25 +160,19 @@ const projects = [
     name: "MINGLE",
     img: "./assets/mingle.png",
     desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
-    link: "https://mingle-app-virdi.herokuapp.com/",
+    link: "https://mingle-app-virdi.onrender.com/",
   },
   {
     name: "STREET SAVER",
     img: "./assets/streetSaver.png",
     desc: "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
-    link: "https://street-saver.herokuapp.com/",
+    link: "https://street-saver.onrender.com/",
   },
   {
     name: "HANGMAN",
     img: "/assets/hangman.png",
     desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
     link: "https://rupindervirdi96.github.io/hangman",
-  },
-  {
-    name: "LOOPER",
-    img: "./assets/looper.png",
-    desc: "",
-    link: "https://looper-app.herokuapp.com/login",
   },
 ];
 
