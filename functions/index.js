@@ -13,7 +13,7 @@ const userInfo = {
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
   about:
-    " I am a coder. I like writing code and make fully functioning websites. I have worked on many projects up until now professionally as well as personally. I have also done a bit of teaching in Computer Science subjects as well. ",
+    " Versatile full-stack web developer with a passion for creating seamless user experiences. Skilled in both front-end and back-end technologies, I thrive on problem-solving and delivering high-quality solutions. Committed to staying updated with the latest trends for innovative and efficient web development. ",
 };
 
 const testimonials = [
@@ -61,7 +61,7 @@ const experience = [
   {
     position: "Front End Web Developer",
     company: "LGS, an IBM company (BELL)",
-    duration: "Currently",
+    duration: "Jan 2022 - Present",
     details: `I am working on a part of a web application to change from MVC code to a react application. I am working on development of various features new and existing. Working with multiple repositories on Bitbucket. Rest of my responsibilities include:<br/>
      • Developing new user-facing features.<br/>
      • Updating Jira trackers for agile environment and team management<br/>
@@ -170,10 +170,10 @@ const projects = [
   },
   {
     name: "HANGMAN",
-    img: "/assets/hangman.png",
+    img: "./assets/hangman.png",
     desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
     link: "https://rupindervirdi96.github.io/hangman",
-  },
+  }
 ];
 
 //Initialize User
@@ -197,7 +197,6 @@ const createSkill = (skill) => {
   return newSkill;
 };
 const createCats = (cat, skills) => {
-  console.log(cat, skills);
   const skillCat = `
   <div class="skillCat">
     <h3>${cat}</h3>
@@ -314,3 +313,12 @@ const createTestimony = (testimony) => {
 testimonials.map((testimony) => {
   $(".testimonials").innerHTML += createTestimony(testimony);
 });
+
+// document.querySelector(".overlay").onclick = () => console.log("abc");
+document
+  .querySelectorAll(".work .overlay")
+  .forEach((x) =>
+    x.addEventListener("onmouseover", () =>
+      document.querySelector(".work .overlay").animate({ scrollTop: 0 }, 100)
+    )
+  );
