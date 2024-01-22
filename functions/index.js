@@ -97,11 +97,14 @@ const skills = [
   {
     cat_name: "WEB_TECHS",
     skills: [
-      { name: "REACT", percentage: "90" },
-      { name: "VUE", percentage: "85" },
+      { name: "REACT.js", percentage: "90" },
+      { name: "TAILWIND", percentage: "65" },
+      { name: "NEXT.js", percentage: "85" },
+      { name: "VUE.js", percentage: "85" },
+      { name: "SCSS", percentage: "75" },
+      { name: "ANGULAR.js", percentage: "85" },
       { name: "HTML", percentage: "95" },
       { name: "CSS", percentage: "75" },
-      { name: "SCSS", percentage: "75" },
     ],
   },
   {
@@ -132,17 +135,17 @@ const skills = [
   {
     cat_name: "BACKEND",
     skills: [
-      { name: "NODE", percentage: "89" },
-      { name: "EXPRESS", percentage: "92" },
-      { name: "NESTjs", percentage: "82" },
+      { name: "NODE.js", percentage: "89" },
+      { name: "EXPRESS.js", percentage: "92" },
+      { name: "NEST.js", percentage: "82" },
       { name: "NODEMAILER.js", percentage: "82" },
     ],
   },
   {
     cat_name: "DESIGN",
     skills: [
-      { name: "FIGMA", percentage: "89" },
-      { name: "ADOBE XD", percentage: "81" },
+      { name: "FIGMA", percentage: "70" },
+      { name: "ADOBE XD", percentage: "65" },
     ],
   },
   {
@@ -173,7 +176,7 @@ const projects = [
     img: "./assets/hangman.png",
     desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
     link: "https://rupindervirdi96.github.io/hangman",
-  }
+  },
 ];
 
 //Initialize User
