@@ -18,6 +18,12 @@ const userInfo = {
 
 const testimonials = [
   {
+    author: "Gagandeep Singh",
+    profession: "Managing Director at Enrage Tech",
+    img: "./assets/2.jfif",
+    message: `He was a great asset for our company. The clients always appreciated his design and the functionality of the websites designed by him. He is a hard working person who is commited to deadlines and also is good human being.`,
+  },
+  {
     author: "Roneet Kumar",
     profession: "Front End Engineer at Morgan Stanley",
     img: "./assets/1.jfif",
@@ -27,12 +33,6 @@ const testimonials = [
     He is super fun to work with and a great team player, moreover he is a skilled
     programmer and has an eye for attention to detail.
     I can happily recommend Rupinder for Full-stack Software development roles.`,
-  },
-  {
-    author: "Gagandeep Singh",
-    profession: "Managing Director at Enrage Tech",
-    img: "./assets/2.jfif",
-    message: `He was a great asset for our company. The clients always appreciated his design and the functionality of the websites designed by him. He is a hard working person who is commited to deadlines and also is good human being.`,
   },
   {
     author: "Lucio Santilli",
@@ -48,40 +48,53 @@ const education = [
     institute: "College Lasalle",
     location: "Quebec, Canada",
     year: "2020",
+    learnings: [
+      "React",
+      "Tailwind",
+      "Advanced - OOPS",
+      "Web-development",
+      "Database",
+      "Web-server applications",
+      "Algorithms and programming",
+    ],
+    logo: "Lasalle.png",
   },
   {
     course: "Bachelors in Computer Science",
     institute: "Guru Nanak Dev University",
     location: "Amritsar, India",
     year: "2017",
+    learnings: [
+      "Operating systems",
+      "OOPS",
+      "Javascript",
+      "Web development",
+      "Database",
+    ],
+    logo: "Gndu.png",
   },
 ];
 
 const experience = [
   {
     position: "Front End Web Developer",
-    company: "LGS, an IBM company (BELL)",
+    company: "LGS, an IBM company (BELL) - Canada",
     duration: "Jan 2022 - Present",
+    logo: "lgsLogo.jpg",
     details: `I am working on a part of a web application to change from MVC code to a react application. I am working on development of various features new and existing. Working with multiple repositories on Bitbucket. Rest of my responsibilities include:<br/>
      • Developing new user-facing features.<br/>
      • Updating Jira trackers for agile environment and team management<br/>
      • Writing efficient code for flexibility and agility of the product.<br/>
      • Assuring that all user input is validated before submitting to back-end<br/>
      • Solving high scale defects in existing applications.<br/>
-     • Working with a pretty complex source code handled on bitbucket using Github.<br/>,
+     • Working with a pretty complex source code handled on bitbucket using Github.<br/>
      • Collaborating with all team members and stakeholders<br/>`,
   },
   {
-    position: "Assistant Professor",
-    company: "ISI College",
-    duration: "Nov 2020 - Jan 2021",
-    details:
-      "Assisted Professor Roneet Kumar at ISI College for teaching Javascript to students. I was assigned to prepare presentations to explain various aspects of the languages theoretically and practically. At many moments I was able to gain a lot of knowledge from the students as well.",
-  },
-  {
     position: "Front End Web Developer",
-    company: "Enrage Tech",
+    company: "Enrage Tech - India",
     duration: "2015 - 2018",
+    logo: "EnrageTechLogo.jpg",
     details: `I was responsible for implementing visual elements that were visible from the computer users vantage point within various web applications. I combined the art of design with the science of programming.<br/>
     Rest of my tasks included:<br/>
      • Develop new user-facing features<br/>
@@ -97,63 +110,23 @@ const skills = [
   {
     cat_name: "WEB_TECHS",
     skills: [
-      { name: "REACT.js", percentage: "90" },
-      { name: "TAILWIND", percentage: "65" },
-      { name: "NEXT.js", percentage: "85" },
-      { name: "VUE.js", percentage: "85" },
-      { name: "SCSS", percentage: "75" },
-      { name: "ANGULAR.js", percentage: "85" },
-      { name: "HTML", percentage: "95" },
-      { name: "CSS", percentage: "75" },
-    ],
-  },
-  {
-    cat_name: "DATABASE",
-    skills: [
-      {
-        name: "MONGO-DB",
-        percentage: "75",
-      },
-      {
-        name: "POSTGRE-SQL",
-        percentage: "75",
-      },
-      {
-        name: "PLSQL",
-        percentage: "82",
-      },
-      {
-        name: "SQL",
-        percentage: "84",
-      },
-      {
-        name: "FIREBASE",
-        percentage: "80",
-      },
-    ],
-  },
-  {
-    cat_name: "BACKEND",
-    skills: [
-      { name: "NODE.js", percentage: "89" },
-      { name: "EXPRESS.js", percentage: "92" },
-      { name: "NEST.js", percentage: "82" },
-      { name: "NODEMAILER.js", percentage: "82" },
-    ],
-  },
-  {
-    cat_name: "DESIGN",
-    skills: [
-      { name: "FIGMA", percentage: "70" },
-      { name: "ADOBE XD", percentage: "65" },
-    ],
-  },
-  {
-    cat_name: "VERSION_CONTROL ",
-    skills: [
-      { name: "GITHUB", percentage: "90" },
-      { name: "BITBUCKET", percentage: "90" },
-      { name: "GIT", percentage: "88" },
+      { name: "REACT.js", percentage: "90", icon: "./assets/React.svg" },
+      { name: "TAILWIND", percentage: "65", icon: "./assets/Tailwind.png" },
+      { name: "NEXT.js", percentage: "85", icon: "./assets/Next.svg" },
+      { name: "VUE.js", percentage: "85", icon: "./assets/Vue.png" },
+      { name: "SCSS", percentage: "75", icon: "./assets/Sass.png" },
+      { name: "ANGULAR.js", percentage: "85", icon: "./assets/Angular.png" },
+      { name: "HTML", percentage: "95", icon: "./assets/HTML.png" },
+      { name: "CSS", percentage: "75", icon: "./assets/CSS.png" },
+      { name: "NODE.js", percentage: "89", icon: "./assets/Node.png" },
+      { name: "MONGO-DB", percentage: "75", icon: "./assets/MongoDB.png" },
+      { name: "SQL", percentage: "84", icon: "./assets/sql.png" },
+      { name: "FIREBASE", percentage: "80", icon: "./assets/Firebase.png" },
+      { name: "FIGMA", percentage: "70", icon: "./assets/Figma.png" },
+      { name: "ADOBE XD", percentage: "65", icon: "./assets/AdobeXD.png" },
+      { name: "GITHUB", percentage: "90", icon: "./assets/github.png" },
+      { name: "BITBUCKET", percentage: "90", icon: "./assets/bitbucket.png" },
+      { name: "GIT", percentage: "88", icon: "./assets/Git.png" },
     ],
   },
 ];
@@ -162,13 +135,13 @@ const projects = [
   {
     name: "MINGLE",
     img: "./assets/mingle.png",
-    desc: "Facebook-clone is a website similar to facebook providing some important features as facebook. This app is built by me as my final project for college. This app has similar design to facebook and some of the features are same too.",
+    desc: "Mingle is a website similar to facebook providing some important features as facebook. This app has similar design to facebook and some of the features are same too.",
     link: "https://mingle-app-virdi.onrender.com/",
   },
   {
-    name: "STREET SAVER",
+    name: "STREETSAVER",
     img: "./assets/streetSaver.png",
-    desc: "Issues tracker is an application that could be a help to the society to improve the condition of roads. This application allows any user to report any potholes or bumps found on the street.",
+    desc: "Street saver is an application that could be a help to the society to improve the condition of roads.",
     link: "https://street-saver.onrender.com/",
   },
   {
@@ -176,6 +149,12 @@ const projects = [
     img: "./assets/hangman.png",
     desc: "The classic game made with react providing a great design and additional features on the way. Like anyone can add additional categories and register their score to the wall of fame.",
     link: "https://rupindervirdi96.github.io/hangman",
+  },
+  {
+    name: "TYPETEST",
+    img: "./assets/typetest.png",
+    desc: "The typing application to test and improve your typing speed.",
+    link: "https://rupindervirdi96.github.io/typing-test",
   },
 ];
 
@@ -188,25 +167,20 @@ var y = 0;
 //Add Skills
 const createSkill = (skill) => {
   const newSkill = `
-  <div class="skill" data-aos="fade-right">
-    <div class="level">
-      <div class="name">${skill.name}</div>
-      <div class="percentage">
-        <div class="bar" style="width:${skill.percentage}%; position:relative"></div>
-        <div class="buttonBar" title=${skill.percentage}%></div>
-      </div>
-    </div>
+  <div class="skill" data-aos="fade-bottom">
+  <div class="name">${skill.name} <img src=${skill?.icon} /></div>
   </div>`;
   return newSkill;
 };
+
 const createCats = (cat, skills) => {
   const skillCat = `
   <div class="skillCat">
-    <h3>${cat}</h3>
   ${skills.map((skill) => createSkill(skill)).join("")}
   </div>`;
   return skillCat;
 };
+
 skills.map((skill) => {
   $(".skills").innerHTML += createCats(skill.cat_name, skill.skills);
 });
@@ -215,26 +189,38 @@ skills.map((skill) => {
 education.map((edu) => {
   $(".education-list").innerHTML += `
   <div class="education">
-  <img src="./assets/education.png" height="80px" width="80px" alt="">
-  <h2 class="duration">${edu.year}</h2>
-  <h2 class="course">${edu.course}</h2>
-  <h2 class="institute">${edu.institute}</h2>
-  <h2 class="location">${edu.location}</h2>
-</div>`;
+    <div class="edu-details">  
+      <div>
+        <span class="course">${edu.course}</span>
+        <span class="institute">${edu.institute} - ${edu.location}</span>
+        <span class="year">${edu.year}</span>
+      </div>
+      <img src="./assets/${edu.logo}" alt="">
+    </div>
+    <div class="learnings">
+    ${edu.learnings
+      .map((learning) => `<div class="learning">${learning}</div>`)
+      .join("")}
+    </div>
+  </div>`;
 });
 
 //Initialize Work
 experience.map((work) => {
   $(".work-list").innerHTML += `
   <div class="work">
-  <div class="overlay" >
-              <div class="details">${work.details}</div>
+  <div class="work-details">  
+  <div>
+  <span class="position">${work.position}</span>
+  <span class="company">${work.company}</span>
+  <span class="duration">${work.duration}</span>
   </div>
-  <img src="./assets/work.png" height="80px" width="80px" alt="">
-  <h2 class="duration">${work.duration}</h2>
-  <h2 class="position">${work.position}</h2>
-  <h2 class="company">${work.company}</h2>
-</div>`;
+  <img src="./assets/${work.logo}" height="80px" width="80px" alt="">
+</div>
+<p class="details-work details-work-hide">${work.details}</p>
+<img class="reveal-icon" src="./assets/revealArrow.png" />
+</div>
+`;
 });
 
 //Initialize Projects
@@ -243,7 +229,8 @@ projects.map((project) => {
           <div class="project" style="background-image: url(${project.img})">
             <div class="overlay" >
               <div class="prj-name">${project.name}</div>
-              <a target="_blank" href="${project.link}">View</a>
+              <p class="prj-desc">${project.desc}</p>
+              <a target="_blank" href="${project.link}"><img src="./assets/arrowForward.png" /></a>
             </div>
           </div>
   `;
@@ -301,14 +288,14 @@ $(".copyright span").innerText = new Date().getFullYear();
 //Testimonials
 const createTestimony = (testimony) => {
   const template = `<div class="testimony">
-<div class="message">"${testimony.message}"</div>
-<div class="details">
-  <img src="${testimony.img}"   alt="">
-  <div class="about">
-    <div class="author">${testimony.author}</div>
-    <div class="prof">${testimony.profession}</div>
+  <div class="details">
+    <img src="${testimony.img}"   alt="">
+    <div class="about">
+      <div class="author">${testimony.author}</div>
+      <div class="prof">${testimony.profession}</div>
+    </div>
   </div>
-</div>
+<div class="message">"${testimony.message}"</div>
 </div>`;
   return template;
 };
@@ -325,3 +312,69 @@ document
       document.querySelector(".work .overlay").animate({ scrollTop: 0 }, 100)
     )
   );
+
+const detailsRevealBtn = document.querySelectorAll(".reveal-icon");
+
+detailsRevealBtn.forEach(
+  (btn, index) =>
+    (btn.onclick = () => {
+      document.querySelectorAll(".reveal-icon")[index].classList.toggle("hide");
+
+      if (
+        document
+          .querySelectorAll(".details-work")
+          [index].classList.contains("details-work-hide")
+      ) {
+        document
+          .querySelectorAll(".details-work")
+          [index].classList.remove("details-work-hide");
+        document
+          .querySelectorAll(".details-work")
+          [index].classList.add("details-work-reveal");
+      } else {
+        document
+          .querySelectorAll(".details-work")
+          [index].classList.remove("details-work-reveal");
+        document
+          .querySelectorAll(".details-work")
+          [index].classList.add("details-work-hide");
+      }
+    })
+);
+
+const testimonialss = document.querySelector(".testimonials");
+const leftArrow = document.querySelector(".arrowLeft");
+const rightArrow = document.querySelector(".arrowRight");
+
+let index = 1;
+const totalImages = document.querySelectorAll(".testimony").length;
+const imageWidth = document.querySelector(".testimony").offsetWidth + 90; // 300px image width + 40px gap
+
+// Center the first image on load
+testimonialss.style.transform = `translateX(-${index * imageWidth}px)`;
+
+rightArrow.addEventListener("click", () => {
+  if (index < totalImages - 1) {
+    index++;
+    updateCarousel();
+  }
+});
+
+leftArrow.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateCarousel();
+  }
+});
+
+function updateCarousel() {
+  const centerOffset = ((totalImages - 1) * imageWidth) / 2;
+  testimonialss.style.transform = `translateX(calc(${centerOffset}px - ${
+    index * imageWidth
+  }px))`;
+  leftArrow.style.display = index === 0 ? "none" : "block";
+  rightArrow.style.display = index === totalImages - 1 ? "none" : "block";
+}
+
+// Initial position to center the first image
+updateCarousel();
