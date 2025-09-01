@@ -87,7 +87,8 @@
   justify-content: center;
   align-items: center;
   font-family: var(--secondary-fontStyle);
-  backdrop-filter: blur(1px);
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
   z-index: 11;
   padding: 5px 0px;
 }
@@ -144,6 +145,8 @@
   transform: translate(-50%, -50%);
   transition: 200ms all ease-out;
   opacity: 1;
+  background-color: var(--accent-color);
+  padding: 5px;
 }
 
 @media (max-width: 800px) {

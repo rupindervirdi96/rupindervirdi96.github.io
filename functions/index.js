@@ -238,7 +238,7 @@ projects.map((project) => {
 
 //Profession animation
 var professions = [
-  "#FrontEndWebDeveloper",
+  "#SeniorFrontEndDeveloper",
   "#FullStackWebDeveloper",
   "#DesignEnthusiast",
   "#Teacher",
