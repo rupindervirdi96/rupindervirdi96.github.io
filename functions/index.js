@@ -12,8 +12,7 @@ const userInfo = {
   name: "RUPINDER PAL SINGH",
   address: "rupindervirdi96@gmail.com",
   phone: "+1(438)998-1746",
-  about:
-    " Versatile full-stack web developer with a passion for creating seamless user experiences. Skilled in both front-end and back-end technologies, I thrive on problem-solving and delivering high-quality solutions. Committed to staying updated with the latest trends for innovative and efficient web development. ",
+  about: "Senior Front-End Developer with extensive experience building scalable, high-performing applications using React, Redux, and modern JavaScript frameworks. Skilled at transforming complex requirements into intuitive, seamless user experiences. Adept at leading projects, mentoring developers, and collaborating with cross-functional teams to deliver innovative solutions. Passionate about staying ahead of industry trends and driving excellence in web development.",
 };
 
 const testimonials = [
