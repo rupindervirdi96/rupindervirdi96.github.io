@@ -133,6 +133,18 @@ const skills = [
       { name: "Bitbucket", icon: "bitbucket.png" },
     ],
   },
+  {
+    group: "AI & LLMs",
+    wide: true,
+    items: [
+      { name: "OpenAI API" },
+      { name: "Claude API" },
+      { name: "RAG & embeddings" },
+      { name: "Prompt engineering" },
+      { name: "GitHub Copilot" },
+      { name: "Cursor" },
+    ],
+  },
 ];
 
 const education = [
@@ -285,14 +297,18 @@ $(".projects").innerHTML = projects
 $(".skill-groups").innerHTML = skills
   .map(
     (group) => `
-    <div class="skill-group reveal">
+    <div class="skill-group reveal${group.wide ? " skill-group-wide" : ""}">
       <h3 class="mono">${group.group}</h3>
       <ul class="skill-list">
         ${group.items
           .map(
             (s) => `
           <li class="skill">
-            <img src="./assets/${s.icon}" alt="" width="22" height="22" loading="lazy" ${s.invert ? 'class="invert-dark"' : ""} />
+            ${
+              s.icon
+                ? `<img src="./assets/${s.icon}" alt="" width="22" height="22" loading="lazy" ${s.invert ? 'class="invert-dark"' : ""} />`
+                : '<span class="skill-glyph" aria-hidden="true">✦</span>'
+            }
             ${s.name}
           </li>`
           )

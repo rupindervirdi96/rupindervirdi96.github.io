@@ -1225,6 +1225,22 @@ ol {
   object-fit: contain;
 }
 
+.skill-glyph {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-ink);
+  font-size: 11px;
+  line-height: 1;
+}
+
+.skill-group-wide {
+  grid-column: 1 / -1;
+}
+
 :root[data-theme="dark"] .skill img.invert-dark {
   filter: invert(1);
 }
