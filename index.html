@@ -4,144 +4,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome !</title>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171577823-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
+  <title>Rupinder Pal Singh · Senior Front-End Developer</title>
+  <meta name="description"
+    content="Rupinder Pal Singh is a senior front-end developer building scalable, high-performing web applications with React, Redux and modern JavaScript." />
+  <meta name="theme-color" content="#f7f4ee" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#121110" media="(prefers-color-scheme: dark)" />
 
-    gtag("config", "UA-171577823-1");
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rupinder Pal Singh · Senior Front-End Developer" />
+  <meta property="og:description"
+    content="Building scalable, high-performing web applications with React, Redux and modern JavaScript." />
+  <meta property="og:url" content="https://rupindervirdi96.github.io/" />
+  <meta property="og:image" content="https://rupindervirdi96.github.io/assets/profile.jpg" />
+
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e0751f'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia,serif' font-size='30' font-style='italic' fill='%23fff'%3Erv%3C/text%3E%3C/svg%3E" />
+
+  <!-- Apply the saved theme before first paint to avoid a flash -->
+  <script>
+    try {
+      const saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") document.documentElement.dataset.theme = saved;
+    } catch (e) { }
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+    rel="stylesheet" />
   <link rel="stylesheet" href="./index.css" />
-  <link rel="stylesheet" href="./work.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
-  <div class="container">
-    <ul class="links" type="none">
-      <!-- <li><a data-aos="fade-down" data-aos-once="true" href="#about">ABOUT</a></li> -->
-      <li>
-        <a data-aos="fade-down" data-aos-once="true" href="#projects"><img src="./assets/ProjectsIcon.png" alt="" /></a>
-        <span>PROJECTS</span>
-      </li>
-      <li>
-        <a data-aos="fade-down" data-aos-once="true" href="#work"><img src="./assets/workIcon.webp" alt="" />
-        </a>
-        <span>WORK</span>
-      </li>
-      <li>
-        <a data-aos="fade-down" data-aos-once="true" href="#education"><img src="./assets/educationIcon.png" alt="">
-        </a>
-        <span>EDUCATION</span>
-      </li>
-      <li>
-        <a data-aos="fade-down" data-aos-once="true" href="#skills"><img src="./assets/skillsIcon.png" alt="">
-        </a>
-        <span>SKILLS</span>
-      </li>
-      <li>
-        <a data-aos="fade-down" data-aos-once="true" href="#testimonials"><img src="./assets/testimonials.png" alt="">
-        </a>
-        <span>FEEDBACK</span>
-      </li>
-    </ul>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <div id="intro" class="section introd">
-      <div class="profile-pic"></div>
-      <span class="name" data-aos="fade-down"></span>
-      <div class="profession" data-aos="fade-down">
-        <span class="professionName"></span>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="Rupinder Pal Singh, back to top">
+        <span class="brand-mark">rv</span>
+        <span class="brand-name">Rupinder Pal Singh</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#testimonials">Kind words</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn theme-toggle" type="button" aria-label="Toggle colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4.5" />
+            <path
+              d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11Z" />
+          </svg>
+        </button>
+        <a class="btn btn-small btn-solid header-cta" href="./CV.pdf" target="_blank" rel="noopener">Résumé</a>
+        <button class="icon-btn menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+          aria-controls="site-nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4 8h16M4 16h16" />
+          </svg>
+        </button>
       </div>
-      <div class="buttons" tabindex="0">
-        <a id="btnHireMe" aria-label="hire-me-link"
-          href="https://www.linkedin.com/in/rupinder-pal-singh-99b479178/">Linked in</a>
-        <a id="getCv" aria-label="get-cv-link" href="./CV.pdf">Resume</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero wrap" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow reveal"><span class="pulse" aria-hidden="true"></span>Senior Front-End Developer · Canada</p>
+        <h1 class="hero-title reveal">
+          Rupinder Pal Singh<span class="hero-title-sub">builds interfaces that feel <em>effortless</em>.</span>
+        </h1>
+        <p class="hero-roles reveal" aria-live="polite">
+          <span class="mono">currently&nbsp;→</span> <span class="role-word">#SeniorFrontEndDeveloper</span>
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-solid" href="#projects">See my work <span aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="./CV.pdf" target="_blank" rel="noopener">Download résumé</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/rupinder-pal-singh-99b479178/" target="_blank"
+            rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
+
+      <figure class="hero-portrait reveal">
+        <img src="./assets/profile.jpg" alt="Portrait of Rupinder Pal Singh" width="1784" height="1900" />
+        <figcaption class="portrait-card">
+          <span class="mono">Now</span>
+          <strong>Front End Web Developer</strong>
+          <span>LGS, an IBM company</span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- TECH MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track"></div>
     </div>
 
     <!-- ABOUT -->
-    <div class="space" id="about"></div>
-    <div class="section about" data-aos="fade-up">
-      <div class="info"></div>
-    </div>
+    <section class="section wrap about" id="about" aria-labelledby="about-title">
+      <div class="section-head reveal">
+        <p class="kicker">01 — About</p>
+        <h2 id="about-title">Turning complex requirements into <em>calm</em> user experiences.</h2>
+      </div>
+      <p class="about-text reveal"></p>
+    </section>
 
-    <!-- WORK -->
-    <div class="space" id="work"></div>
-    <div class="section" data-aos="fade-up">
-      <h2>played the field as...</h2>
-      <div class="work-list"></div>
-    </div>
-
-    <!-- EDUCATION -->
-    <div class="space" id="education"></div>
-    <div class="section" data-aos="fade-up">
-      <h2>i have studied a bit too...</h2>
-      <div id="education" class="education-list"></div>
-    </div>
-
-    <!-- SKILLS -->
-    <div class="space" id="skills"></div>
-    <div class="section" data-aos="fade-up">
-      <h2>my skills include...</h2>
-      <div class="skills"></div>
-    </div>
+    <!-- EXPERIENCE -->
+    <section class="section wrap" id="experience" aria-labelledby="experience-title">
+      <div class="section-head reveal">
+        <p class="kicker">02 — Experience</p>
+        <h2 id="experience-title">Where I've <em>played the field</em>.</h2>
+      </div>
+      <ol class="timeline"></ol>
+    </section>
 
     <!-- PROJECTS -->
-    <div class="space" id="projects"></div>
-    <div class="section" data-aos="fade-up">
-      <h2>some projects i made..</h2>
+    <section class="section wrap" id="projects" aria-labelledby="projects-title">
+      <div class="section-head reveal">
+        <p class="kicker">03 — Selected work</p>
+        <h2 id="projects-title">From first click to <em>final detail</em>.</h2>
+        <p class="section-intro">A selection of digital products and experiences I've brought to life.</p>
+      </div>
       <div class="projects"></div>
-    </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section wrap" id="skills" aria-labelledby="skills-title">
+      <div class="section-head reveal">
+        <p class="kicker">04 — Toolkit</p>
+        <h2 id="skills-title">The tools I <em>reach for</em>.</h2>
+      </div>
+      <div class="skill-groups"></div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section wrap" id="education" aria-labelledby="education-title">
+      <div class="section-head reveal">
+        <p class="kicker">05 — Education</p>
+        <h2 id="education-title">I've studied <em>a bit</em>, too.</h2>
+      </div>
+      <div class="education-list"></div>
+    </section>
 
     <!-- TESTIMONIALS -->
-    <div class="space" id="testimonials"></div>
-    <div class="section testimonials-section" data-aos="fade-up">
-      <h2>i have also been told that i am a nice guy...</h2>
-      <div class="sub-container ">
-        <div class="arrowLeft"></div>
-        <div class="arrowRight"></div>
-        <div class="testimonials">
-        </div>
+    <section class="section wrap" id="testimonials" aria-labelledby="testimonials-title">
+      <div class="section-head reveal">
+        <p class="kicker">06 — Kind words</p>
+        <h2 id="testimonials-title">What people <em>say</em>.</h2>
       </div>
-    </div>
+      <div class="testimonials"></div>
+    </section>
 
-    <div class="space"></div>
-    <div class="section transparent" id="social-presence">
-      <div>
-        <span>rupindervirdi96@gmail.com</span> |
-        <span><a href="tel:+14389981746">+1 (438) 998 1746</a></span>
+    <!-- CONTACT -->
+    <section class="section wrap contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact-card reveal">
+        <p class="kicker">07 — Contact</p>
+        <h2 id="contact-title">Let's build something <em>great</em> together.</h2>
+        <p class="contact-lead">Have a role, a project or just want to say hi? My inbox is always open.</p>
+        <div class="contact-actions">
+          <a class="btn btn-solid btn-large" href="mailto:rupindervirdi96@gmail.com">rupindervirdi96@gmail.com</a>
+          <button class="btn btn-ghost btn-large copy-email" type="button"
+            data-email="rupindervirdi96@gmail.com">Copy email</button>
+        </div>
+        <ul class="contact-links">
+          <li><a href="tel:+14389981746">+1 (438) 998 1746</a></li>
+          <li><a href="https://www.linkedin.com/in/rupinder-pal-singh-99b479178/" target="_blank"
+              rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/rupindervirdi96" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://codepen.io/rupindervirdi96" target="_blank" rel="noopener">CodePen ↗</a></li>
+          <li><a href="https://www.instagram.com/rupindervirdi96/" target="_blank" rel="noopener">Instagram ↗</a>
+          </li>
+        </ul>
       </div>
-      <ul type="none" class="social-links">
-        <li>
-          <a href="https://www.instagram.com/rupindervirdi96/"><img src="./assets/instaLogo.png" alt="instagram"
-              title="instagram" /></a>
-        </li>
-        <li>
-          <a href="https://github.com/rupindervirdi96"><img src="./assets/Github.png" alt="github" title="github" /></a>
-        </li>
-        <li>
-          <a href="https://codepen.io/rupindervirdi96"><img src="./assets/codepen.png" alt="codepen"
-              title="codepen" /></a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      fait avec plaisir par rupindervirdi96 <span></span>
-    </div>
-  </div>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <span>© <span class="year"></span> Rupinder Pal Singh</span>
+    <span>Fait avec plaisir à la main — no frameworks were harmed.</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="./functions/index.js"></script>
 </body>
-<script src="./functions/index.js"></script>
 
 </html>
